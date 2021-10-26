@@ -1,3 +1,12 @@
 #include <ge.hpp>
 
-//GE_MAIN(/*new state here*/, 640, 1080, "Doodle Jump");
+class Temp : public ge::Object {
+public:
+    Temp(){}
+    ~Temp(){}
+
+    void update(){}
+    void render(){}
+};
+
+GE_MAIN(Temp, 1920, 1080, "Blank Proj");

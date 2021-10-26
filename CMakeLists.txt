@@ -2,30 +2,18 @@ cmake_minimum_required(VERSION 3.10)
 
 set(SUPPORT_JPG OFF)
 
-project(doodle)
+project(blank_proj)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
-    
-    src/menu/menu.cpp
-
-    src/game/game.cpp
-
-    src/game/handler/handler.cpp
-
-    src/game/platform/platform.cpp
-
-    src/game/player/player.cpp
-
-    src/over/over.cpp
 )
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-add_subdirectory(external/sdl)
-add_subdirectory(external/sdl_image)
-add_subdirectory(external/ge)
+add_subdirectory(lib/sdl)
+add_subdirectory(lib/sdl_image)
+add_subdirectory(lib/ge)
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC external/sdl/include

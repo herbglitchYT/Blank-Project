@@ -1,6 +1,6 @@
-# Doodle
+# Blank Proj
 ## Description
-Bunny Senpai go boing
+this is a blank proj. I know, it would be reaaaaly hard to guess that based on the title
 
 ## Setup
 * mingw-w64
@@ -23,5 +23,6 @@ Bunny Senpai go boing
 * in vscode, Run ```CMake: Delete Cache and Reconfigure```
     * This may take a bit, but you shouldn't have to run it again
 * press [f7]
-* in the vscode terminal you can now run the project by Running ```build\satisfactory_tools.exe```
+* in the vscode terminal you can now run the project by Running ```build\blank_proj.exe```
+    *you can also run as debu by pressing [ctrl] + [f5]
 
