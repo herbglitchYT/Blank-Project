@@ -16,18 +16,18 @@ add_subdirectory(lib/sdl_image)
 add_subdirectory(lib/ge)
 
 target_include_directories(${PROJECT_NAME}
-    PUBLIC external/sdl/include
-    PUBLIC external/sdl_image
-    PUBLIC external/ge
+    PUBLIC lib/sdl/include
+    PUBLIC lib/sdl_image
+    PUBLIC lib/ge
 )
 
 target_link_directories(${PROJECT_NAME}
-    PUBLIC external/sdl
-    PUBLIC external/sdl_image
-    PUBLIC external/ge
+    PUBLIC lib/sdl
+    PUBLIC lib/sdl_image
+    PUBLIC lib/ge
 )
 
-file(COPY res DESTINATION ${CMAKE_BINARY_DIR})
+# file(COPY res DESTINATION ${CMAKE_BINARY_DIR})
 
 if(WIN32 AND NOT MSVC)
     target_link_libraries(${PROJECT_NAME} mingw32 SDL2main SDL2 SDL2_image ge)
